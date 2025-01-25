@@ -1,1 +1,4 @@
-data/*
+data/raw/*
+data/test/*
+data/train/*
+data/validation/*

@@ -7,7 +7,7 @@ from tensorflow.keras.models import load_model
 # Path
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # MODEL_PATH = os.path.join(BASE_DIR, 'models', 'jmk_detection.h5') # H5
-MODEL_PATH = os.path.join(BASE_DIR, 'models', 'jmk_detection_model.keras') # Keras
+MODEL_PATH = os.path.join(BASE_DIR, 'models', 'efficientnet_finetuned_model.keras') # Keras
 
 # Load model
 model = load_model(MODEL_PATH)
@@ -33,7 +33,7 @@ def predict_image(image_path):
 
 # Penggunaan
 if __name__ == "__main__":
-  image_path = os.path.join(BASE_DIR, 'data', 'test', 'jomok', 'jomok_40.jpeg') # Ganti dengan path gambar yang ingin diprediksi
+  image_path = os.path.join(BASE_DIR, 'data', 'test',  'p4.jpg') # Ganti dengan path gambar yang ingin diprediksi
 
   result, confidence, class_confidences = predict_image(image_path)
   print("----------------------")

@@ -1,8 +1,8 @@
 import os
 
-folder_path = "data/train/sexy"
+folder_path = "data/raw/sexy"
 
-custom_prefix = "sxy" # Custom name prefix
+custom_prefix = "sexy" # Custom name prefix
 counter = 1  # Start numbering
 
 for filename in os.listdir(folder_path):
